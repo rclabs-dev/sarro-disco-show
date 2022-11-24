@@ -19,16 +19,16 @@
       "isAvailableWorldwide": true,
       "locales": {
         "en-US": {
-          "description": "Rádio Sarro",
+          "description": "Radio Sarro",
           "examplePhrases": [
-            "Alexa abrir Rádio Sarro"
+            "Alexa abrir Radio Sarro"
           ],
           "keywords": [],
-          "name": "Rádio Sarro",
+          "name": "Radio Sarro",
           "summary": "O melhor da Dance Music."
         }
       },
-      "testingInstructions": "Instruções"
+      "testingInstructions": "..."
     }
   }
 }
