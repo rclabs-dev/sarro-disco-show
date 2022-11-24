@@ -1,10 +1,3 @@
-/* *
- * This sample demonstrates handling intents for an Alexa skill implementing the AudioPlayer interface using the Alexa Skills Kit SDK (v2).
- * This sample works using the default DynamoDB table associated with an Alexa-hosted skill - you will need to use this with a hosted skill,
- * or you use your own DynamoDB table in the request and response interceptors.
- * Please visit https://github.com/alexa-samples for additional examples on implementing slots, dialog management,
- * session persistence, api calls, and more.
- * */
 const Alexa = require('ask-sdk-core');
 const AWS = require('aws-sdk');
 const ddbAdapter = require('ask-sdk-dynamodb-persistence-adapter');
@@ -21,12 +14,12 @@ const LaunchRequestHandler = {
         let reprompt;
 
         if (!playbackInfo.hasPreviousPlaybackSession) {
-            message = 'Welcome to the multi-stream player. you can ask to play the audio to begin the stream.';
-            reprompt = 'You can say, play the audio, to begin.';
+            message = 'Bem vindo a Sarro Disco Show. Qual programa você deseja ouvir?';
+            reprompt = 'Você pode dizer tocar rádio sarro para inciar a rádio ao vivo ou tocar, mais o nome do programa desejado.';
         } else {
             playbackInfo.inPlaybackSession = false;
-            message = `You were listening to ${constants.audioData[playbackInfo.playOrder[playbackInfo.index]].title}. Would you like to resume?`;
-            reprompt = 'You can say yes to resume or no to play from the top.';
+            message = `Na sua última visita você estava ouvindo ${constants.audioData[playbackInfo.playOrder[playbackInfo.index]].title}. Gostaria de continuar?`;
+            reprompt = 'Você pode dizer sim para continuar ou não para iniciar do começo.';
         }
 
         return handlerInput.responseBuilder
