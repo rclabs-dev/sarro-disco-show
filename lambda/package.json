@@ -1,7 +1,7 @@
 {
-  "name": "multi-stream-audio-player",
+  "name": "sarro-disco-show",
   "version": "1.0.0",
-  "description": "Sample skill for multi-stream audio",
+  "description": "Radio Sarro, o melhor da Dance Music",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
