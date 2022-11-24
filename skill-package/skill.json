@@ -19,16 +19,16 @@
       "isAvailableWorldwide": true,
       "locales": {
         "en-US": {
-          "description": "Sample skill using the AudioPlayer interface",
+          "description": "Rádio Sarro",
           "examplePhrases": [
-            "Alexa open audio player sample"
+            "Alexa abrir Rádio Sarro"
           ],
           "keywords": [],
-          "name": "Audioplayer sample",
-          "summary": "Sample Short Description"
+          "name": "Rádio Sarro",
+          "summary": "O melhor da Dance Music."
         }
       },
-      "testingInstructions": "Sample Testing Instructions."
+      "testingInstructions": "Instruções"
     }
   }
 }
